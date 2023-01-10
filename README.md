@@ -72,13 +72,13 @@
 ### Linux
 
 + 下载源码后编译
-  + 第一步，下载源码
+  + Step 1，下载源码
 
   ```bash
   cd /tmp/ && wget https://github.com/fjykTec/ModernWMS/archive/refs/heads/master.zip
   ```  
 
-  + 第二步，安装.NET SDK 、运行时 和 NodeJS
+  + Step 2，安装.NET SDK 、运行时 和 NodeJS
 
   ```bash
   wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -89,7 +89,7 @@
   sudo apt install -y nodejs
   ```  
 
-  + 第三步，编译前端和后端
+  + Step 3，编译前端和后端
 
   ```bash
   cd /tmp/ && unzip master.zip && cd ./ModernWMS-master
@@ -109,20 +109,20 @@
 ### Windows
 
 + 下载源码后编译部署
-  + 第一步，下载源码
+  + Step 1，下载源码
   ```PowerShell
   cd c:\
   wget -Uri https://github.com/fjykTec/ModernWMS/archive/refs/heads/master.zip  -OutFile master.zip
   Expand-Archive -Path C:\master.zip -DestinationPath C:\
   ```
-  + 第二步，安装.NET SDK 、运行时 和 NodeJS
+  + Step 2，安装.NET SDK 、运行时 和 NodeJS
   ```CMD
   wget -Uri https://download.visualstudio.microsoft.com/download/pr/35660869-0942-4c5d-8692-6e0d4040137a/4921a36b578d8358dac4c27598519832/dotnet-sdk-7.0.101-win-x64.exe  -OutFile dotnet-sdk-7.0.101-win-x64.exe
   dotnet-sdk-7.0.100-win-x64.exe /install /quiet /norestart
   wget -Uri https://nodejs.org/dist/v16.13.1/node-v16.13.1-x64.msi  -OutFile node-v16.13.1-x64.msi
   msiexec /i .\node-v16.13.1-x64.msi /passive /norestart
   ```
-  + 第三步，编译前端和后端
+  + Step 3，编译前端和后端
   ```
   md C:\ModernWMS\frontend\
   md C:\ModernWMS\backend\
@@ -133,7 +133,7 @@
   yarn && yarn build 
   copy-item -path ".\frontend\dist\" -destination "C:\ModernWMS\frontend\" -recurse
   ```
-  + 第四步，安装nginx并启动
+  + Step 4，安装nginx并启动
   ```
   cd C:\
   wget -Uri http://nginx.org/download/nginx-1.16.1.zip -OutFile nginx-1.16.1.zip
@@ -147,20 +147,20 @@
 
 
 + 下载源码后编译
-  + 第一步，下载源码
+  + Step 1，下载源码
 
   ```bash
   cd /tmp/ && wget https://github.com/fjykTec/ModernWMS/archive/refs/heads/master.zip
   ```  
   
-  + 第二步，编译前端和后端
+  + Step 2，编译前端和后端
 
   ```bash
   cd /tmp/ && unzip master.zip && cd ./ModernWMS-master
   cd ./frontend/ && yarn && yarn build && cp -rf ./frontend/dist/* ./docker/frontend/
   cd ./backend/ && sudo dotnet publish && cp -rf ./backend/ModernWMS/bin/Debug/net7.0/publish/* ./docker/backend/
   ```  
-  + 第三步，部署
+  + Step 3，部署
 
   ```bash
   cd /tmp/ModernWMS-master/docker/
