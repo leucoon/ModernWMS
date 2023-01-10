@@ -98,7 +98,7 @@
   cd ./backend/ && sudo dotnet publish && cp -rf ./backend/ModernWMS/bin/Debug/net7.0/publish/* /ModernWMS/backend/
   ```  
 
-  + 第四步，安装nginx
+  + Step 4，安装nginx
 
   ```bash
   cd /tmp/ && wget http://nginx.org/download/nginx-1.18.0.tar.gz 
