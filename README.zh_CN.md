@@ -36,7 +36,7 @@
 </div>
 <div align="center">
   <h3>
-  <a href="../../blob/master/README.md">English Document</a>
+  <a href="https://github/fzykTec/ModernWMS/blob/master/README.md">English Document</a>
   </h3>
   <h3>
   <a href="https://modernwms.ikeyly.com">官网首页</a>
